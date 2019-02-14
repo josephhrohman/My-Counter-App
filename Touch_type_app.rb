@@ -9,14 +9,26 @@
 # => Bonus: store averages to be analyzed later
 
 response = ""
-valid_responses = ["Quit\n", "quit\n", "Play\n", "play game\n"]
+valid_responses = ["Quit\n", "quit\n", "Play\n", "play game\n", "Play Game\n"]
+continue = ["Play\n", "play game\n", "Play Game\n"]
+
+def playgame
+	random = "ohasdkfhasdfa asdhfkjash asdfhk"
+	input = ""
+	puts "\ntype this"
+	puts random + '\n'
+
+	if random == input
+		puts "correct"
+	end
+end
 
 while response != "Quit\n"
 	puts "Your options are: \n(1) Play Game \n(2) Quit"
 	response = gets
 
-	if response == "Play Game\n"
-		"Playing Game.\n"
+	if continue.include? response
+		playgame
 	end
 
 	if ! valid_responses.include? response
@@ -24,4 +36,8 @@ while response != "Quit\n"
 	end
 end
 
+# t1 = Time.now
+# # processing...
+# t2 = Time.now
+# delta = t2 - t1 # in seconds
 
