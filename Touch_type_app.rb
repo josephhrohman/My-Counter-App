@@ -13,13 +13,16 @@ valid_responses = ["Quit\n", "quit\n", "Play\n", "play game\n", "Play Game\n"]
 continue = ["Play\n", "play game\n", "Play Game\n"]
 
 def playgame
-	random = "ohasdkfhasdfa asdhfkjash asdfhk"
+	random = "Test\n"
 	input = ""
 	puts "\ntype this"
-	puts random + '\n'
+	puts random + "\n"
+	input = gets
 
 	if random == input
 		puts "correct"
+	else
+		puts "NO JESUS WHY"
 	end
 end
 
