@@ -8,21 +8,20 @@
 # => Bonus: adjust difficulty of string to be typed
 # => Bonus: store averages to be analyzed later
 
-count = 0
 response = ""
-valid_responses = ["Play Game\n", "play game\n", "Play\n", "Play\n", "play\n", "Quit\n", "quit\n"]
+valid_responses = ["Quit\n", "quit\n", "Play\n", "play game\n"]
 
 while response != "Quit\n"
-	puts "Hi, welcome to counter. Count is currently: " + count.to_s
 	puts "Your options are: \n(1) Play Game \n(2) Quit"
 	response = gets
 
-	if response == ("Play Game\n" || "play game\n")
-		count = count + 1
+	if response == "Play Game\n"
+		"Playing Game.\n"
 	end
 
-	if !valid_responses.include? response
+	if ! valid_responses.include? response
 		puts "Invalid options. Please try again.\n"
 	end
-
 end
+
+
